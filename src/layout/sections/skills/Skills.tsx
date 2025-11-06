@@ -7,14 +7,26 @@ export const Skills = () => {
   return (
     <StyledSkills>
         <SectionTitle>Skills</SectionTitle>
-        <FlexWrapper>
-            <Skill/>
+        <FlexWrapper wrap="wrap" justify="center">
+            <Skill iconId="js" title="javascript" />
+            <Skill iconId="ts" title="typescript" />
+            <Skill iconId="mongo" title="mongo db"/>
+            <Skill iconId="pgsql" title="PostgreSQL" />
+            <Skill iconId="jest" title="Jest" />
+            <Skill iconId="express" title="Express JS" />
+            <Skill iconId="nestjs" title="Nest JS" />
+            <Skill iconId="docker" title="Docker" />
+            <Skill iconId="reactjs" title="react js" />
+            <Skill iconId="reactn" title="react native" />
+            <Skill iconId="styled" title="Styled Components" />
+            <Skill iconId="redux" title="Redux" />
+            <Skill iconId="git" title="git" />
         </FlexWrapper>
     </StyledSkills>
   )
 };
 
 const StyledSkills = styled.section`
-    background-color: #f6b2f7;
+    background-color: #331734;
     min-height: 100vh;
 `
