@@ -17,5 +17,4 @@ export const Icon = (props: IconPropsType) => {
 }
 
 const Svg = styled.svg`
-  shape-rendering: crispEdges;
 `
