@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/photo.svg";
+import arrow from "../../../assets/images/arrow.svg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const Main = () => {
@@ -18,19 +19,25 @@ export const Main = () => {
 
         <img src={photo} alt="photo" />
       </FlexWrapper>
+
+      <Arrow>
+        <a href="#">
+          <img src={arrow} alt="" />
+        </a>
+      </Arrow>
     </StyledMain>
   );
 };
 
 const StyledMain = styled.section`
-    background-color: #bcecd5;
-    min-height: 100vh;
-`
+  background-color: #73a78e;
+  min-height: 100vh;
+`;
 
-const MainTitle = styled.h1`
-   
-`
+const MainTitle = styled.h1``;
 
-const Name = styled.h2`
-   
-`
+const Name = styled.h2``;
+
+const Arrow = styled.div`
+  text-align: center;
+`;
