@@ -10,6 +10,6 @@ export const About = () => {
     )
 }
 
-const StyledAbout = styled.div`
+const StyledAbout = styled.section`
     background-color: #dfdc92;
 `
