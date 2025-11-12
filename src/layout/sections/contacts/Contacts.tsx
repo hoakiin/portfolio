@@ -1,17 +1,20 @@
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
+import { Container } from "../../../components/Container";
 
 export const Contacts = () => {
   return (
     <StyledContacts>
-      <SectionTitle>Contacts</SectionTitle>
-      <StyledForm>
-        <Field placeholder="Name" />
-        <Field placeholder="Email" />
-        <Field as="textarea" placeholder="Message" />
-        <Button type="submit">Submit</Button>
-      </StyledForm>
+      <Container>
+        <SectionTitle>Contacts</SectionTitle>
+        <StyledForm>
+          <Field placeholder="Name" />
+          <Field placeholder="Email" />
+          <Field as="textarea" placeholder="Message" />
+          <Button type="submit">Submit</Button>
+        </StyledForm>
+      </Container>
     </StyledContacts>
   );
 };

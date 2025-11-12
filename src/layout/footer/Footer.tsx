@@ -1,48 +1,51 @@
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
 
 export const Footer = () => {
   return (
     <StyledFooter>
-      <FlexWrapper direction="column" align="center">
-        <SocialList>
-          <SocialItem>
-            <SocialLink href="#">
-              <Icon
-                width="37px"
-                height="37px"
-                iconId="gmail"
-                viewBox="0 0 38 38"
-              />
-              <Name>Gmail</Name>
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink href="#">
-              <Icon
-                width="37px"
-                height="37px"
-                iconId="linkedin"
-                viewBox="0 0 38 38"
-              />
-              <Name>linkedin</Name>
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink href="#">
-              <Icon
-                width="37px"
-                height="37px"
-                iconId="github"
-                viewBox="0 0 38 38"
-              />
-              <Name>Github</Name>
-            </SocialLink>
-          </SocialItem>
-        </SocialList>
-        <Copyright>WEB DEVELOPER 2025</Copyright>
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper direction="column" align="center">
+          <SocialList>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon
+                  width="37px"
+                  height="37px"
+                  iconId="gmail"
+                  viewBox="0 0 38 38"
+                />
+                <Name>Gmail</Name>
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon
+                  width="37px"
+                  height="37px"
+                  iconId="linkedin"
+                  viewBox="0 0 38 38"
+                />
+                <Name>linkedin</Name>
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon
+                  width="37px"
+                  height="37px"
+                  iconId="github"
+                  viewBox="0 0 38 38"
+                />
+                <Name>Github</Name>
+              </SocialLink>
+            </SocialItem>
+          </SocialList>
+          <Copyright>WEB DEVELOPER 2025</Copyright>
+        </FlexWrapper>
+      </Container>
     </StyledFooter>
   );
 };
@@ -56,8 +59,7 @@ const SocialList = styled.ul`
   gap: 90px;
 `;
 
-const SocialItem = styled.li`
-`;
+const SocialItem = styled.li``;
 
 const SocialLink = styled.a`
   display: flex;
@@ -65,8 +67,6 @@ const SocialLink = styled.a`
   align-items: center;
 `;
 
-const Name = styled.span`
-`;
+const Name = styled.span``;
 
-const Copyright = styled.small`
-`;
+const Copyright = styled.small``;

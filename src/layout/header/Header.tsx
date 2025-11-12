@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { Menu } from "../../components/menu/Menu";
+import { Container } from "../../components/Container";
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <Menu />
+      <Container>
+        <Menu />
+      </Container>
     </StyledHeader>
   );
 };
 
-const StyledHeader = styled.header`
-`;
+const StyledHeader = styled.header``;

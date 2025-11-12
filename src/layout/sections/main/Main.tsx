@@ -2,27 +2,30 @@ import styled from "styled-components";
 import photo from "../../../assets/images/photo.svg";
 import arrow from "../../../assets/images/arrow.svg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Container } from "../../../components/Container";
 
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper>
-        <div>
-          <MainTitle>WEB DEVELOPER</MainTitle>
-          <Name>Erica Font</Name>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt.
-          </p>
-        </div>
+      <Container>
+        <FlexWrapper>
+          <div>
+            <MainTitle>WEB DEVELOPER</MainTitle>
+            <Name>Erica Font</Name>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt.
+            </p>
+          </div>
 
-        <img src={photo} alt="photo" />
-      </FlexWrapper>
+          <img src={photo} alt="photo" />
+        </FlexWrapper>
 
-      <Arrow href="#">
-        <img src={arrow} alt="" />
-      </Arrow>
+        <Arrow href="#">
+          <img src={arrow} alt="" />
+        </Arrow>
+      </Container>
     </StyledMain>
   );
 };
