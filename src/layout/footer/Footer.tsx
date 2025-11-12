@@ -8,7 +8,7 @@ export const Footer = () => {
       <FlexWrapper direction="column" align="center">
         <SocialList>
           <SocialItem>
-            <SocialLink>
+            <SocialLink href="#">
               <Icon
                 width="37px"
                 height="37px"
@@ -19,7 +19,7 @@ export const Footer = () => {
             </SocialLink>
           </SocialItem>
           <SocialItem>
-            <SocialLink>
+            <SocialLink href="#">
               <Icon
                 width="37px"
                 height="37px"
@@ -30,7 +30,7 @@ export const Footer = () => {
             </SocialLink>
           </SocialItem>
           <SocialItem>
-            <SocialLink>
+            <SocialLink href="#">
               <Icon
                 width="37px"
                 height="37px"
