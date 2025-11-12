@@ -20,10 +20,8 @@ export const Main = () => {
         <img src={photo} alt="photo" />
       </FlexWrapper>
 
-      <Arrow>
-        <a href="#">
-          <img src={arrow} alt="" />
-        </a>
+      <Arrow href="#">
+        <img src={arrow} alt="" />
       </Arrow>
     </StyledMain>
   );
@@ -36,8 +34,6 @@ const StyledMain = styled.section`
 
 const MainTitle = styled.h1``;
 
-const Name = styled.h2``;
+const Name = styled.span``;
 
-const Arrow = styled.div`
-  text-align: center;
-`;
+const Arrow = styled.a``;
