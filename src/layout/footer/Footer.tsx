@@ -48,7 +48,6 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: #d8fff8;
   min-height: 20vh;
 `;
 

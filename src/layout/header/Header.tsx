@@ -10,5 +10,4 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #a6d3f4;
 `;

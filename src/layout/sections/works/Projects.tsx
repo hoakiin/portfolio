@@ -31,6 +31,5 @@ export const Projects = () => {
 };
 
 const StyledWorks = styled.section`
-  background-color: #e5e4ff;
   min-height: 100vh;
 `;

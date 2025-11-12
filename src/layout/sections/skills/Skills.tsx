@@ -35,6 +35,5 @@ const SkillsWrapper = styled.div`
 `;
 
 const StyledSkills = styled.section`
-  background-color: #ffe2ff;
   min-height: 100vh;
 `;
