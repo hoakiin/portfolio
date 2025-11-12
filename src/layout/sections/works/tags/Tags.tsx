@@ -15,6 +15,6 @@ export const Tags = (props: { tagsItems: Array<string> }) => {
 const StyledTags = styled.div`
   ul {
     display: flex;
-    gap: 10px;
+    gap: 30px;
   }
 `;
