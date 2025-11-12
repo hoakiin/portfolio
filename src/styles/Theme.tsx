@@ -1,15 +1,15 @@
 
-
 export const theme = {
-    colors: {
-        primaryBg: "#041F31",
-        projectBg: "#222525",
+  colors: {
+    primaryBg: "#191824",
+    headerBg: "#13121C",
+    projectBg: "#262435",
 
-        font: "#BDEBEA",
-        fontDark: "#252728",
-        titleDark: "#1F2626",
-        titleLight: "#D9F2F2",
+    font: "#F9F5FA",
+    fontDark: "#0E0D14",
+    fontLight: "#FFFFFF",
+    title: "#b6e6fc",
 
-        gradient: "linear-gradient(90deg,rgba(0, 245, 160, 1) 0%, rgba(0, 217, 245, 1) 100%)"
-    }
-}
+    gradient: "linear-gradient(90deg,#A1C4FD 0%, #C2E9FB 100%)",
+  },
+};

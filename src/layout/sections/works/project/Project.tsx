@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Tags } from "../tags/Tags";
+import { theme } from "../../../../styles/Theme";
 
 
 type ProjectPropsType = {
@@ -21,7 +22,7 @@ export const Project = (props: ProjectPropsType) => {
 }
 
 const StyledProject = styled.div`
-    background-color: #d3b7e7 ;
+    background-color: ${theme.colors.projectBg};
     max-width: 522px;
     width: 100%;
 `
