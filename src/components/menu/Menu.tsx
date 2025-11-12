@@ -8,14 +8,16 @@ export const Menu = () => {
           <li>
             <a href="#">Home</a>
           </li>
-          <div>
-            <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </div>
+          <li>
+            <ul>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </StyledMenu>
     </div>
@@ -26,10 +28,8 @@ const StyledMenu = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
-
-    div {
-        display: flex;
-        gap: 100px;
+    & ul {
+      gap: 20px;
     }
   }
 `;
