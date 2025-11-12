@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const SectionTitle = styled.h3`
-    color: red;
-`
+export const SectionTitle = styled.h2`
+  color: red;
+`;
