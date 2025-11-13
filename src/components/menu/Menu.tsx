@@ -40,7 +40,6 @@ const StyledMenu = styled.nav`
 
 const Link = styled.a`
   color: ${theme.colors.font};
-  text-decoration: none;
   display: inline-block;
   position: relative;
   transition: all 0.4s ease;

@@ -37,7 +37,8 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
     }
     input, textarea {
-        font: inherit;
+        border: 1px solid ${theme.colors.font};
         outline: none;
+        background: unset;
     }
 `;
