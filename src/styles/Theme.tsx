@@ -5,10 +5,10 @@ export const theme = {
     headerBg: "#13121C",
     projectBg: "#262435",
 
-    font: "#F9F5FA",
+    font: "#d1e1e8",
     fontDark: "#0E0D14",
     fontLight: "#FFFFFF",
-    title: "#b6e6fc",
+    title: "#cfeefc",
 
     gradient: "linear-gradient(90deg,#A1C4FD 0%, #C2E9FB 100%)",
   },
