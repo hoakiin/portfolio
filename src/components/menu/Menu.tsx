@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Button } from "../Button";
+import { theme } from "../../styles/Theme";
 
 export const Menu = () => {
   return (
@@ -6,15 +8,17 @@ export const Menu = () => {
       <StyledMenu>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link href="#">Home</Link>
           </li>
           <li>
             <ul>
               <li>
-                <a href="#">Projects</a>
+                <Link href="#">Projects</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Button as="a" href="#">
+                  Contact
+                </Button>
               </li>
             </ul>
           </li>
@@ -29,7 +33,23 @@ const StyledMenu = styled.nav`
     display: flex;
     justify-content: space-between;
     & ul {
-      gap: 20px;
+      gap: 87px;
     }
+  }
+`;
+
+const Link = styled.a`
+  color: ${theme.colors.font};
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background: ${theme.colors.gradient};
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-1px);
   }
 `;
