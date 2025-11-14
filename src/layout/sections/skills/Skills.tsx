@@ -30,13 +30,15 @@ export const Skills = () => {
   );
 };
 
+const StyledSkills = styled.section`
+  margin-bottom: 145px;
+`;
+
 const SkillsWrapper = styled.div`
+  margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
-  row-gap: 50px;
-`;
-
-const StyledSkills = styled.section`
-  min-height: 100vh;
+  row-gap: 60px;
+  column-gap: 110px;
 `;
