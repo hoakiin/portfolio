@@ -34,10 +34,8 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
         background: none;
         font: inherit;
-        outline: none;
     }
     input, textarea {
-        border: 1px solid ${theme.colors.font};
         outline: none;
         background: unset;
     }
