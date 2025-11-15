@@ -13,7 +13,7 @@ export const Projects = () => {
     <StyledWorks>
       <Container>
         <SectionTitle>Projects</SectionTitle>
-        <FlexWrapper justify="space-between">
+        <FlexWrapper justify="space-between" align="flex-start">
           <Project
             title="TITLE PROJECT"
             src={projectImg}
@@ -34,4 +34,8 @@ export const Projects = () => {
 
 const StyledWorks = styled.section`
   margin: 0 0 140px 0;
+
+  h2 {
+    margin-bottom: 32px;
+  }
 `;
