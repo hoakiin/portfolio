@@ -33,5 +33,5 @@ export const Projects = () => {
 };
 
 const StyledWorks = styled.section`
-  min-height: 100vh;
+  margin: 0 0 140px 0;
 `;
