@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
+import { theme } from "../../styles/Theme";
 
 export const Footer = () => {
   return (
@@ -51,12 +52,12 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  min-height: 20vh;
+  padding-bottom: 80px;
 `;
 
 const SocialList = styled.ul`
   display: flex;
-  gap: 90px;
+  gap: 85px;
 `;
 
 const SocialItem = styled.li``;
@@ -65,8 +66,25 @@ const SocialLink = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &:hover span {
+    background: ${theme.colors.gradient};
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `;
 
-const Name = styled.span``;
+const Name = styled.span`
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin: 11px 0 0 0;
+`;
 
-const Copyright = styled.small``;
+const Copyright = styled.small`
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  opacity: 0.7;
+  margin-top: 46px;
+`;
