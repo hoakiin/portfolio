@@ -4,7 +4,9 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Project } from "./project/Project";
 import projectImg from "../../../assets/images/project.webp";
 import { Container } from "../../../components/Container";
+import { Tabs } from "./tabs/Tabs";
 
+const projItems = ["All", "Landing Page", "React", "SPA"]
 const items1 = ["Javascript", "PostgreSQL", "React", "Redux"];
 const items2 = ["Javascript", "React Native", "Redux"];
 
@@ -13,6 +15,7 @@ export const Projects = () => {
     <StyledWorks>
       <Container>
         <SectionTitle>Projects</SectionTitle>
+        <Tabs tabs = {projItems}/>
         <FlexWrapper justify="space-between" align="flex-start">
           <Project
             title="TITLE PROJECT"
@@ -21,7 +24,7 @@ export const Projects = () => {
             text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           />
           <Project
-            title="I N S I G H T G R A M"
+            title="TITLE PROJECT"
             src={projectImg}
             tags={items2}
             text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
