@@ -12,4 +12,10 @@ export const theme = {
 
     gradient: "linear-gradient(90deg,#A1C4FD 0%, #C2E9FB 100%)",
   },
+
+  media: {
+    tablet: "screen and (max-width: 768px)",
+    mobile: "screen and (max-width: 576px)"
+  }
+
 };
