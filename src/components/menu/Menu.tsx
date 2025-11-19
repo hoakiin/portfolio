@@ -34,6 +34,10 @@ const StyledMenu = styled.nav`
     justify-content: space-between;
     & ul {
       gap: 87px;
+
+      @media ${theme.media.mobile} {
+        gap: 37px;
+      }
     }
   }
 `;
