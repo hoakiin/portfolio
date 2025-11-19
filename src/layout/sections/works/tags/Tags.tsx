@@ -17,6 +17,8 @@ const StyledTags = styled.ul`
   gap: 12px;
 
   li {
+    white-space: nowrap;
+
     border: 1px solid transparent;
     border-radius: 4px;
 

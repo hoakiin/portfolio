@@ -35,6 +35,10 @@ export const Projects = () => {
 const StyledWorks = styled.section`
   margin: 0 0 140px 0;
 
+  ${FlexWrapper} {
+    gap: 50px 50px;
+  }
+
   h2 {
     margin-bottom: 32px;
   }
