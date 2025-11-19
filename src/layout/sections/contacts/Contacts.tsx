@@ -25,7 +25,7 @@ const StyledContacts = styled.section`
 `;
 
 const StyledForm = styled.form`
-  margin: 45px auto 0 auto;
+  margin: 0 auto 0 auto;
   max-width: 532px;
   width: 100%;
   display: flex;

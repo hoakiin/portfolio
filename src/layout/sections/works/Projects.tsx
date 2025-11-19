@@ -38,8 +38,4 @@ const StyledWorks = styled.section`
   ${FlexWrapper} {
     gap: 50px 50px;
   }
-
-  h2 {
-    margin-bottom: 32px;
-  }
 `;

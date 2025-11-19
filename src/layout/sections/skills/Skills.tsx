@@ -35,7 +35,6 @@ const StyledSkills = styled.section`
 `;
 
 const SkillsWrapper = styled.div`
-  margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;

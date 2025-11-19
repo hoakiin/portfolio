@@ -31,7 +31,7 @@ const Text = styled.p`
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.1px;
-  margin: 20px 0 130px 0;
+  margin: 0 0 130px 0;
 
   position: relative;
 
