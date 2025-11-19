@@ -38,7 +38,6 @@ const SkillsWrapper = styled.div`
   margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-content: center;
-  row-gap: 60px;
-  column-gap: 110px;
+  justify-items: center;
+  gap: 50px 15px;
 `;

@@ -17,7 +17,6 @@ export const Skill = (props: SkillPropsType) => {
 
 const StyledSkill = styled.div`
   text-align: center;
-  width: 130px;
 `;
 
 const SkillTitle = styled.p`
