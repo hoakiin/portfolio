@@ -43,6 +43,17 @@ export const Footer = () => {
                 <Name>Github</Name>
               </SocialLink>
             </SocialItem>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon
+                  width="37px"
+                  height="37px"
+                  iconId="telegram"
+                  viewBox="0 0 38 38"
+                />
+                <Name>Telegram</Name>
+              </SocialLink>
+            </SocialItem>
           </SocialList>
           <Copyright>WEB DEVELOPER 2025</Copyright>
         </FlexWrapper>
