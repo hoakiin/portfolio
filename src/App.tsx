@@ -2,6 +2,7 @@ import './App.css'
 import { Footer } from './layout/footer/Footer';
 import { Header } from './layout/header/Header';
 import { About } from './layout/sections/about/About';
+import { Background } from './layout/sections/background/Background';
 import { Contacts } from './layout/sections/contacts/Contacts';
 import { Main } from './layout/sections/main/Main';
 import { Skills } from './layout/sections/skills/Skills';
@@ -13,6 +14,7 @@ function App() {
             <Header/>
             <Main/>
             <About/>
+            <Background/>
             <Projects/>
             <Skills/>
             <Contacts/>
