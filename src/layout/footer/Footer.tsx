@@ -63,12 +63,20 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 `;
 
 const SocialList = styled.ul`
   display: flex;
   gap: 85px;
+
+  @media ${theme.media.tablet} {
+    gap: 60px;
+  }
+
+  @media ${theme.media.mobile} {
+    gap: 50px;
+  }
 `;
 
 const SocialItem = styled.li``;
@@ -77,12 +85,14 @@ const SocialLink = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &:hover span {
-    background: ${theme.colors.gradient};
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  svg {
+    transition: all 0.5s ease;
+  }
+  
+  &:hover {
+    svg {
+      scale: 1.1;
+    }
   }
 `;
 
@@ -91,6 +101,14 @@ const Name = styled.span`
   text-transform: uppercase;
   letter-spacing: 1.3px;
   margin: 11px 0 0 0;
+  background: ${theme.colors.gradient};
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media ${theme.media.mobile} {
+    display: none;
+  }
 `;
 
 const Copyright = styled.small`
@@ -98,4 +116,8 @@ const Copyright = styled.small`
   letter-spacing: 1.3px;
   opacity: 0.7;
   margin-top: 46px;
+  background: ${theme.colors.gradient};
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
