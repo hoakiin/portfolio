@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../Button";
 import { theme } from "../../styles/Theme";
+import { font } from "../../styles/Common";
 
 export const Menu = () => {
   return (
@@ -32,11 +33,15 @@ const StyledMenu = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
+    @media ${theme.media.tablet} {
+      ${font({ Fmax: 16, Fmin: 13 })};
+    }
+
     & ul {
       gap: 87px;
 
-      @media ${theme.media.mobile} {
-        gap: 37px;
+      @media ${theme.media.tablet} {
+        gap: 30px;
       }
     }
   }
