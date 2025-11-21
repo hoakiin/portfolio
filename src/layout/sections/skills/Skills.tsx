@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
 import { Container } from "../../../components/Container";
+import { theme } from "../../../styles/Theme";
 
 export const Skills = () => {
   return (
@@ -39,4 +40,16 @@ const SkillsWrapper = styled.div`
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   gap: 50px 15px;
+
+  @media ${theme.media.large} {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media ${theme.media.tablet} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media ${theme.media.mobile} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
