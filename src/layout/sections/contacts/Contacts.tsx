@@ -22,10 +22,14 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
   margin-bottom: 190px;
+
+  @media ${theme.media.tablet} {
+    margin-bottom: 120px;
+  }
 `;
 
 const StyledForm = styled.form`
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   max-width: 532px;
   width: 100%;
   display: flex;
@@ -35,6 +39,10 @@ const StyledForm = styled.form`
   textarea {
     resize: none;
     min-height: 165px;
+  }
+
+  @media ${theme.media.tablet} {
+    max-width: 364px;
   }
 `;
 
@@ -51,7 +59,7 @@ const Field = styled.input`
     color: #8b93a0;
   }
 
-  &:focus-visible{
+  &:focus-visible {
     outline: 1px solid #a2bfcd;
   }
 `;
