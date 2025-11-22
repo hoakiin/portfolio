@@ -18,13 +18,15 @@ export const Button = styled.button<ButtonPropsType>`
   ${({ outlined }) =>
     outlined &&
     css`
-      border: 2px solid transparent;
-      background-image: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%),
-        linear-gradient(#262435, #262435),
-        linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
-      background-clip: text, padding-box, border-box;
-      -webkit-background-clip: text, padding-box, border-box;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
+      border: 2px solid #c2e9fb;
+      background: transparent;
+      color: #c2e9fb;
+      &:hover {
+        filter: brightness(0.7);
+      }
     `}
+
+  &:hover {
+    filter: brightness(0.75);
+  }
 `;
