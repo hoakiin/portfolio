@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../../../styles/Theme";
+import { font } from "../../../../styles/Common";
 
 type TabsPropsType = {
   tabs: Array<string>;
@@ -36,7 +37,7 @@ const ListItem = styled.li`
 `;
 
 const Link = styled.a`
-  font-size: 14px;
+  ${font({Fmax: 14, Fmin: 12 })};
   text-transform: uppercase;
   letter-spacing: 1px;
 

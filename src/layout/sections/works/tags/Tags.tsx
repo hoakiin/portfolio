@@ -15,6 +15,7 @@ const StyledTags = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 12px;
+  flex-wrap: wrap;
 
   li {
     white-space: nowrap;

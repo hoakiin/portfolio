@@ -38,7 +38,9 @@ export const Project = (props: ProjectPropsType) => {
 const StyledProject = styled.div`
   background-color: ${theme.colors.projectBg};
   max-width: 522px;
-  width: 100%;
+  width: 362px;
+  flex-grow: 1;
+  margin: 0 auto;
 `;
 
 const Description = styled.div`
@@ -47,25 +49,24 @@ const Description = styled.div`
   a ~ a {
     margin-left: 12px;
   }
+
+  @media ${theme.media.large} {
+    padding: 16px 17px 35px 19px;
+  }
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
-
-  &:hover {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(4px);
-    }
-    ${Button} {
-        opacity: 1;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    opacity: 0;
   }
 
   ${Button} {
@@ -75,11 +76,31 @@ const ImageWrapper = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+    ${Button} {
+      opacity: 1;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 1;
+    }
+    ${Button} {
+      opacity: 1;
+    }
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: 388px;
 `;
 
 const Title = styled.h3`
