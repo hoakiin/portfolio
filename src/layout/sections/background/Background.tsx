@@ -3,6 +3,7 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Item } from "./item/Item";
+import { theme } from "../../../styles/Theme";
 
 export const Background = () => {
   return (
@@ -15,7 +16,7 @@ export const Background = () => {
               <Item
                 years="1998 - 2004"
                 name="Bachelors in Engineering"
-                text="Harvard School of Science and management."
+                text="iacentem substantiales um se sed esse haec Possit facis qui patriam."
               />
             </ItemsWrapper>
           </div>
@@ -36,15 +37,18 @@ export const Background = () => {
 };
 
 const StyledBackground = styled.section`
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 
   ${FlexWrapper} {
-    gap: 200px;
+    gap: 50px;
+
+    @media ${theme.media.tablet} {
+      flex-wrap: wrap;
+    }
   }
 `;
 
 const ItemsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 55px;
 `;
