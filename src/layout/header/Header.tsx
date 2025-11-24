@@ -15,10 +15,14 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   background: ${theme.colors.headerBg};
-  padding: 30px;
+  padding: 30px 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
+
+  @media ${theme.media.tablet} {
+    padding: 30px 0px;
+  }
 `;

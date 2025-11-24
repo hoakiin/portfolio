@@ -68,7 +68,7 @@ const StyledFooter = styled.footer`
 
 const SocialList = styled.ul`
   display: flex;
-  gap: 85px;
+  gap: 70px;
 
   @media ${theme.media.tablet} {
     gap: 60px;
