@@ -1,7 +1,6 @@
-import styled from "styled-components";
 import { Tags } from "../tags/Tags";
-import { theme } from "../../../../styles/Theme";
 import { Button } from "../../../../components/Button";
+import { S } from "../Projects_Styles";
 
 type ProjectPropsType = {
   title: string;
@@ -10,107 +9,32 @@ type ProjectPropsType = {
   tags: Array<string>;
 };
 
-export const Project = (props: ProjectPropsType) => {
+export const Project: React.FC<ProjectPropsType> = ({
+  title,
+  text,
+  src,
+  tags,
+}) => {
   return (
-    <StyledProject>
-      <ImageWrapper>
-        <Image src={props.src} alt="" />
+    <S.Project>
+      <S.ImageWrapper>
+        <S.Image src={src} alt="" />
         <Button as="a" href="#">
           View Project
         </Button>
-      </ImageWrapper>
+      </S.ImageWrapper>
 
-      <Description>
-        <Title>{props.title}</Title>
-        <Tags tagsItems={props.tags} />
-        <Text>{props.text}</Text>
+      <S.Description>
+        <S.Title>{title}</S.Title>
+        <Tags tagsItems={tags} />
+        <S.Text>{text}</S.Text>
         <Button as="a" href="#">
           Demo
         </Button>
         <Button as="a" href="#" outlined>
           Code
         </Button>
-      </Description>
-    </StyledProject>
+      </S.Description>
+    </S.Project>
   );
 };
-
-const StyledProject = styled.div`
-  background-color: ${theme.colors.projectBg};
-  max-width: 522px;
-  width: 362px;
-  flex-grow: 1;
-  margin: 0 auto;
-`;
-
-const Description = styled.div`
-  padding: 24px 26px 35px 26px;
-
-  a ~ a {
-    margin-left: 12px;
-  }
-
-  @media ${theme.media.large} {
-    padding: 16px 17px 35px 19px;
-  }
-`;
-
-const ImageWrapper = styled.div`
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    opacity: 0;
-  }
-
-  ${Button} {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &:hover {
-    &::before {
-      opacity: 1;
-    }
-    ${Button} {
-      opacity: 1;
-      &:hover {
-        filter: brightness(0.9);
-      }
-    }
-  }
-
-  @media ${theme.media.tablet} {
-    &::before {
-      opacity: 1;
-    }
-    ${Button} {
-      opacity: 1;
-    }
-  }
-`;
-
-const Image = styled.img`
-  width: 100%;
-`;
-
-const Title = styled.h3`
-  font-size: 20px;
-  font-weight: 600;
-  color: ${theme.colors.fontLight};
-`;
-
-const Text = styled.p`
-  line-height: 24px;
-  letter-spacing: 0.8px;
-  margin-bottom: 30px;
-`;
