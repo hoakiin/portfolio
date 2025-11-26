@@ -4,8 +4,11 @@ import { theme } from "../../../styles/Theme";
 const Contacts = styled.section`
   margin-bottom: 190px;
 
-  @media ${theme.media.tablet} {
-    margin-bottom: 120px;
+  @media ${theme.media.large} {
+    margin-bottom: 100px;
+  }
+  @media ${theme.media.mobile} {
+    margin-bottom: 80px;
   }
 `;
 
@@ -23,7 +26,7 @@ const StyledForm = styled.form`
   }
 
   @media ${theme.media.tablet} {
-    max-width: 364px;
+    max-width: 400px;
   }
 `;
 

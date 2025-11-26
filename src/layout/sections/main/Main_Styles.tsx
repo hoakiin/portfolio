@@ -7,7 +7,7 @@ const Main = styled.section`
   min-height: 100vh;
   display: flex;
   align-items: center;
-  margin-top: 60px;
+  padding-top: 80px;
 
   @media ${theme.media.large} {
     ${FlexWrapper} {

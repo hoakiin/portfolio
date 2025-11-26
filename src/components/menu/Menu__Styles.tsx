@@ -6,6 +6,7 @@ const Menu = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     @media ${theme.media.tablet} {
       ${font({ Fmax: 16, Fmin: 13 })};
     }

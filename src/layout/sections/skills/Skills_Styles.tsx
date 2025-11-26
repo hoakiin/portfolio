@@ -4,6 +4,10 @@ import { font } from "../../../styles/Common";
 
 const Skills = styled.section`
   margin-bottom: 145px;
+
+  @media ${theme.media.mobile} {
+    margin-bottom: 80px;
+  }
 `;
 
 const SkillsWrapper = styled.div`
