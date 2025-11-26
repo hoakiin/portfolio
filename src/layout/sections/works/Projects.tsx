@@ -31,7 +31,7 @@ export const Projects: React.FC = () => {
       <Container>
         <SectionTitle>Projects</SectionTitle>
         <Tabs tabs={tabsItems} />
-        <FlexWrapper justify="space-between" align="flex-start" wrap="wrap">
+        <FlexWrapper justify="space-between" align="stretch" wrap="wrap">
           {projData.map((p, index) => {
             return (
               <Project

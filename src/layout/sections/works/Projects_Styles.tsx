@@ -11,8 +11,8 @@ const Projects = styled.section`
     gap: 30px;
   }
 
-  @media ${theme.media.tablet} {
-    margin: 0 0 100px 0;
+  @media ${theme.media.large} {
+    margin: 0 0 90px 0;
   }
 `;
 
@@ -24,10 +24,16 @@ const Project = styled.div`
   width: 362px;
   flex-grow: 1;
   margin: 0 auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Description = styled.div`
   padding: 24px 26px 35px 26px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   a ~ a {
     margin-left: 12px;
@@ -96,7 +102,10 @@ const Text = styled.p`
   line-height: 24px;
   letter-spacing: 0.8px;
   margin-bottom: 30px;
+flex-grow: 1;
 `;
+
+const ButtonRow = styled.div``;
 
 // Tags
 
@@ -172,6 +181,7 @@ export const S = {
   Projects,
   Project,
   Description,
+  ButtonRow,
   ImageWrapper,
   Image,
   Title,

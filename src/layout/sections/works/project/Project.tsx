@@ -28,12 +28,14 @@ export const Project: React.FC<ProjectPropsType> = ({
         <S.Title>{title}</S.Title>
         <Tags tagsItems={tags} />
         <S.Text>{text}</S.Text>
-        <Button as="a" href="#">
-          Demo
-        </Button>
-        <Button as="a" href="#" outlined>
-          Code
-        </Button>
+        <S.ButtonRow>
+          <Button as="a" href="#">
+            Demo
+          </Button>
+          <Button as="a" href="#" outlined>
+            Code
+          </Button>
+        </S.ButtonRow>
       </S.Description>
     </S.Project>
   );
