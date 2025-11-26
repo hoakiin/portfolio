@@ -9,6 +9,7 @@ const About = styled.section`
 
   @media ${theme.media.large} {
     margin: 100px 0 70px 0;
+    align-items: unset;
   }
 `;
 
