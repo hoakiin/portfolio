@@ -7,6 +7,7 @@ type ButtonPropsType = {
 };
 
 export const Button = styled.button<ButtonPropsType>`
+  display: inline-block;
   padding: 12px 18px;
   border-radius: 6px;
   background: ${theme.colors.gradient};
