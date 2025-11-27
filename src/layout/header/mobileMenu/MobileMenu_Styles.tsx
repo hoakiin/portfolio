@@ -2,13 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 import { css } from "styled-components";
 
-const MobileMenu = styled.nav`
-  display: none;
-
-  @media ${theme.media.tablet} {
-    display: block;
-  }
-`;
+const MobileMenu = styled.nav``;
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;

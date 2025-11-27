@@ -9,9 +9,6 @@ const Menu = styled.nav`
   @media ${theme.media.large} {
     gap: 40px;
   }
-  @media ${theme.media.tablet} {
-    display: none;
-  }
 
   ul {
     display: flex;
