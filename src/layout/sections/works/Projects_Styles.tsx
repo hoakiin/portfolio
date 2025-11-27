@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Button } from "../../../components/Button";
 import { font } from "../../../styles/Common";
+import {css} from "styled-components";
 
 const Projects = styled.section`
   margin: 0 0 140px 0;
@@ -154,7 +155,7 @@ const ListItem = styled.li`
   position: relative;
 `;
 
-const Link = styled.a`
+const Link = styled.button<{active: boolean}>`
   ${font({ Fmax: 14, Fmin: 12 })};
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -169,6 +170,10 @@ const Link = styled.a`
     height: 2px;
     background: ${theme.colors.gradient};
     transition: width 0.4s ease;
+
+    ${props => props.active && css<{active?: boolean}>`
+      width: 100%;
+    `}
   }
   &:hover {
     &::after {

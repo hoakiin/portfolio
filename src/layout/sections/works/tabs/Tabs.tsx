@@ -1,17 +1,21 @@
 import { S } from "../Projects_Styles";
 
-type TabsPropsType = {
-  tabs: Array<string>;
-};
+export type TabsStatusType = "all" | "landing" | "react" | "spa"
 
-export const Tabs: React.FC<TabsPropsType> = (props: TabsPropsType) => {
+type TabsPropsType = {
+  tabsItems: Array<{status: TabsStatusType, title: string}>,
+  changeFilterStatus: (value: TabsStatusType | "spa") => void,
+  currentFilterStatus: string
+}
+
+export const Tabs = (props: TabsPropsType) => {
   return (
     <S.Tabs>
       <ul>
-        {props.tabs.map((item, index) => {
+        {props.tabsItems.map((item, index) => {
           return (
             <S.ListItem key={index}>
-              <S.Link href="#">{item}</S.Link>
+              <S.Link active={props.currentFilterStatus === item.status} onClick={()=> {props.changeFilterStatus(item.status)}}>{item.title}</S.Link>
             </S.ListItem>
           );
         })}
