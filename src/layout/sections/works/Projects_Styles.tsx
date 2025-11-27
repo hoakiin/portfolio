@@ -102,7 +102,7 @@ const Text = styled.p`
   line-height: 24px;
   letter-spacing: 0.8px;
   margin-bottom: 30px;
-flex-grow: 1;
+  flex-grow: 1;
 `;
 
 const ButtonRow = styled.div``;
