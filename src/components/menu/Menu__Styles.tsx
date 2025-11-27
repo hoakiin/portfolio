@@ -1,22 +1,24 @@
 import styled from "styled-components";
 import { theme } from "../../styles/Theme";
-import { font } from "../../styles/Common";
 
 const Menu = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  @media ${theme.media.large} {
+    gap: 40px;
+  }
+  @media ${theme.media.tablet} {
+    display: none;
+  }
+
   ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media ${theme.media.tablet} {
-      ${font({ Fmax: 16, Fmin: 13 })};
-    }
+    gap: 67px;
 
-    & ul {
-      gap: 87px;
-
-      @media ${theme.media.tablet} {
-        gap: 30px;
-      }
+    @media ${theme.media.large} {
+      gap: 40px;
     }
   }
 `;
@@ -38,5 +40,5 @@ const Link = styled.a`
 
 export const S = {
   Menu,
-  Link
+  Link,
 };

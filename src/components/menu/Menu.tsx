@@ -10,21 +10,19 @@ export const Menu: React.FC = () => {
             <S.Link href="#">Home</S.Link>
           </li>
           <li>
-            <ul>
-              <li>
-                <S.Link href="#">Projects</S.Link>
-              </li>
-              <li>
-                <Button as="a" href="#">
-                  Contact
-                </Button>
-              </li>
-            </ul>
+            <S.Link href="#">About</S.Link>
+          </li>
+          <li>
+            <S.Link href="#">Projects</S.Link>
+          </li>
+          <li>
+            <S.Link href="#">Skills</S.Link>
           </li>
         </ul>
+        <Button as="a" href="#">
+          Contact
+        </Button>
       </S.Menu>
     </div>
   );
 };
-
-
