@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Button } from "../../../components/Button";
 import { font } from "../../../styles/Common";
-import {css} from "styled-components";
+import { css } from "styled-components";
 
 const Projects = styled.section`
   margin: 0 0 140px 0;
@@ -120,18 +120,12 @@ const Tags = styled.ul`
   li {
     white-space: nowrap;
 
-    border: 1px solid transparent;
+    border: 1px solid #96d4f0;
     border-radius: 4px;
 
-    background-image: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%),
-      linear-gradient(#262435, #262435),
-      linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
-
-    background-clip: text, padding-box, border-box;
-
-    -webkit-background-clip: text, padding-box, border-box;
-
-    color: transparent;
+    background: ${theme.colors.gradient};
+    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     font-size: 11px;
@@ -155,7 +149,7 @@ const ListItem = styled.li`
   position: relative;
 `;
 
-const Link = styled.button<{active: boolean}>`
+const Link = styled.button<{ active: boolean }>`
   ${font({ Fmax: 14, Fmin: 12 })};
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -171,9 +165,11 @@ const Link = styled.button<{active: boolean}>`
     background: ${theme.colors.gradient};
     transition: width 0.4s ease;
 
-    ${props => props.active && css<{active?: boolean}>`
-      width: 100%;
-    `}
+    ${(props) =>
+      props.active &&
+      css<{ active?: boolean }>`
+        width: 100%;
+      `}
   }
   &:hover {
     &::after {
