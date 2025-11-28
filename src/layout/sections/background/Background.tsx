@@ -21,7 +21,7 @@ const experienceData = [
 
 export const Background: React.FC = () => {
   return (
-    <S.Background>
+    <S.Background id="background">
       <Container>
         <FlexWrapper>
           <div>

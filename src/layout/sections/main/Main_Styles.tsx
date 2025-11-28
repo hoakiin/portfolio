@@ -75,6 +75,7 @@ const Arrow = styled.a`
   display: block;
   text-align: center;
   margin-top: 100px;
+  cursor: pointer;
 
   @media ${theme.media.large} {
     display: none;

@@ -10,11 +10,15 @@ const Header = styled.header`
   right: 0;
   z-index: 99999;
 
+  a {
+    cursor: pointer;
+  }
+
   @media ${theme.media.tablet} {
     padding: 12px 0px;
   }
 `;
 
 export const S = {
-  Header
+  Header,
 };

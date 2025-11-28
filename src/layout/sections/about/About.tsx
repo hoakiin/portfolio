@@ -6,7 +6,7 @@ import { S } from "./About_Styles";
 
 export const About: React.FC = () => {
   return (
-    <S.About>
+    <S.About id="about">
       <Container>
         <S.Wrapper>
           <S.Image src={image} />

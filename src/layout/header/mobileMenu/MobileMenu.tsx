@@ -2,9 +2,44 @@ import { S } from "./MobileMenu_Styles";
 import React from "react";
 import { useState } from "react";
 
+const items = [
+  {
+    title: "Home",
+    href: "main",
+    offset: 0,
+  },
+  {
+    title: "About",
+    href: "about",
+    offset: -80,
+  },
+  {
+    title: "Background",
+    href: "background",
+    offset: -80,
+  },
+  {
+    title: "Projects",
+    href: "projects",
+    offset: -60,
+  },
+  {
+    title: "Skills",
+    href: "skills",
+    offset: -70,
+  },
+  {
+    title: "Contact",
+    href: "contacts",
+    offset: -65,
+  },
+];
+
 export const MobileMenu: React.FC = () => {
-  const [menuIsOpen, setmenuIsOpen] = useState(false)
-  const onBurgerBtnClick = () => { setmenuIsOpen(!menuIsOpen) }
+  const [menuIsOpen, setmenuIsOpen] = useState(false);
+  const onBurgerBtnClick = () => {
+    setmenuIsOpen(!menuIsOpen);
+  };
 
   return (
     <S.MobileMenu>
@@ -12,23 +47,31 @@ export const MobileMenu: React.FC = () => {
         <span></span>
       </S.BurgerButton>
 
-      <S.MobileMenuPopup isOpen={menuIsOpen} onClick={ ()=>{setmenuIsOpen(false)}}>
+      <S.MobileMenuPopup
+        isOpen={menuIsOpen}
+        onClick={() => {
+          setmenuIsOpen(false);
+        }}
+      >
         <ul>
-          <li>
-            <S.Link href="#">Home</S.Link>
-          </li>
-          <li>
-            <S.Link href="#">About</S.Link>
-          </li>
-          <li>
-            <S.Link href="#">Projects</S.Link>
-          </li>
-          <li>
-            <S.Link href="#">Skills</S.Link>
-          </li>
-          <li>
-            <S.Link href="#">Contact</S.Link>
-          </li>
+          {items.map((item, index) => {
+            return (
+              <li key={index}>
+                <S.NavLink
+                  onClick={() => {
+                    setmenuIsOpen(false);
+                  }}
+                  activeClass="active"
+                  to={item.href}
+                  smooth={true}
+                  spy={true}
+                  offset={item.offset}
+                >
+                  {item.title}
+                </S.NavLink>
+              </li>
+            );
+          })}
         </ul>
       </S.MobileMenuPopup>
     </S.MobileMenu>

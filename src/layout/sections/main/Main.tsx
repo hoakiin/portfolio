@@ -5,10 +5,11 @@ import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
 import { S } from "./Main_Styles";
 import Typewriter from 'typewriter-effect';
+import { Link } from "react-scroll";
 
 export const Main: React.FC = () => {
   return (
-    <S.Main>
+    <S.Main id="main">
       <Container>
         <FlexWrapper justify="space-around">
           <div>      
@@ -28,14 +29,14 @@ export const Main: React.FC = () => {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt.
             </S.Text>
-            <Button as="a" href="#">
+            <Button as={Link} to={"contacts"} smooth={true} offset={-90}>
               Contact Me
             </Button>
           </div>
 
           <S.Photo src={photo} alt="photo" />
         </FlexWrapper>
-        <S.Arrow href="#">
+        <S.Arrow as={Link} to={"about"} smooth={true}>
           <img src={arrow} alt="" />
         </S.Arrow>
       </Container>

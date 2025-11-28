@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 import { css } from "styled-components";
+import { Link } from "react-scroll";
 
 const MobileMenu = styled.nav``;
 
@@ -86,7 +87,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   }
 `;
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: ${theme.colors.font};
   display: inline-block;
   position: relative;
@@ -105,5 +106,5 @@ export const S = {
   MobileMenu,
   BurgerButton,
   MobileMenuPopup,
-  Link,
+  NavLink,
 };

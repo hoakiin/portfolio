@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 
 const About = styled.section`
+position: relative;
   min-height: 80vh;
   display: flex;
   align-items: end;

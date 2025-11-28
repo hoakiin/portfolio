@@ -68,7 +68,7 @@ export const Projects: React.FC = () => {
   }
 
   return (
-    <S.Projects>
+    <S.Projects id="projects">
       <Container>
         <SectionTitle>Projects</SectionTitle>
         <Tabs
