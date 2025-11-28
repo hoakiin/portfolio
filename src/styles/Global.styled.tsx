@@ -38,6 +38,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     input, textarea {
         outline: none;
-        background: unset;
+        background: ${theme.colors.primaryBg};
     }
 `;

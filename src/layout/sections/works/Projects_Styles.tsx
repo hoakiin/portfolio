@@ -6,6 +6,8 @@ import { font } from "../../../styles/Common";
 import { css } from "styled-components";
 
 const Projects = styled.section`
+  position: relative;
+
   margin: 0 0 140px 0;
 
   ${FlexWrapper} {

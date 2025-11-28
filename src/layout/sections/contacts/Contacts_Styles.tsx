@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 
 const Contacts = styled.section`
+position: relative;
   margin-bottom: 190px;
 
   @media ${theme.media.large} {
