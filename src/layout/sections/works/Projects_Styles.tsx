@@ -120,8 +120,8 @@ const Tags = styled.ul`
   li {
     white-space: nowrap;
 
-    border: 1px solid #96d4f0;
-    border-radius: 4px;
+    border: 1px solid #c2e9fb;
+    border-radius: 6px;
 
     background: ${theme.colors.gradient};
     background-clip: text;

@@ -22,10 +22,14 @@ const Main = styled.section`
 
 const MainTitle = styled.h1`
   ${font({ family: "Tinos", weight: 400, Fmax: 20, Fmin: 16 })};
-  margin: 27px 0 8px 8px;
+  margin: 27px 0 8px 5px;
+
+  p {
+    display: none;
+  }
 
   @media ${theme.media.large} {
-    margin: 40px 0 8px 8px;
+    margin: 40px 0 8px 5px;
   }
 `;
 

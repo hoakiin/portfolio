@@ -27,10 +27,7 @@ const Link = styled.a`
   transition: all 0.4s ease;
 
   &:hover {
-    background: ${theme.colors.gradient};
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ace0f8;
     transform: translateY(-1px);
   }
 `;

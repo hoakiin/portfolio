@@ -4,15 +4,24 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
 import { S } from "./Main_Styles";
-
+import Typewriter from 'typewriter-effect';
 
 export const Main: React.FC = () => {
   return (
     <S.Main>
       <Container>
         <FlexWrapper justify="space-around">
-          <div>
-            <S.MainTitle>WEB DEVELOPER</S.MainTitle>
+          <div>      
+            <S.MainTitle>
+              <p>Frontend Developer.</p>
+              <Typewriter
+                options={{
+                  strings: ["Frontend Developer", "Making Web Magic Happen", "React Developer", "Crafting Web With Soul"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </S.MainTitle>
             <S.Name>Kate Olesik</S.Name>
             <S.Text>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
