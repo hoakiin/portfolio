@@ -1,4 +1,4 @@
-import photo from "../../../assets/images/photo.svg";
+import photo from "../../../assets/images/photo3.svg";
 import arrow from "../../../assets/images/arrow.svg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";

@@ -29,7 +29,7 @@ const MainTitle = styled.h1`
   }
 
   @media ${theme.media.large} {
-    margin: 40px 0 8px 5px;
+    margin: 15px 0 8px 5px;
   }
 `;
 
@@ -58,15 +58,18 @@ const Text = styled.p`
 `;
 
 const Photo = styled.img`
-  max-width: 461px;
-  min-width: 285px;
+  position: relative;
+  max-width: 350px;
+  min-width: 205px;
   width: 100%;
 
   @media ${theme.media.large} {
-    max-width: 400px;
+    max-width: 300px;
+    min-width: 105px;
   }
   @media ${theme.media.mobile} {
-    max-width: 360px;
+    max-width: 250px;
+    min-width: 105px;
     padding: 0 10px;
   }
 `;
@@ -83,10 +86,10 @@ const Arrow = styled.a`
 `;
 
 export const S = {
-    Main,
-    MainTitle,
-    Name, 
-    Text,
-    Photo,
-    Arrow
-}
+  Main,
+  MainTitle,
+  Name,
+  Text,
+  Photo,
+  Arrow,
+};
