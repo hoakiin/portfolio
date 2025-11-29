@@ -2,6 +2,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { theme } from "../../../styles/Theme";
 import { font } from "../../../styles/Common";
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 const Main = styled.section`
   min-height: 100vh;
@@ -74,11 +75,19 @@ const Photo = styled.img`
   }
 `;
 
+const bounce = keyframes`
+  0% { transform: translateY(0); }
+  40% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+`;
+
 const Arrow = styled.a`
   display: block;
   text-align: center;
   margin-top: 100px;
   cursor: pointer;
+  animation: ${bounce} 2s ease-in-out infinite;
+  animation-delay: 0.4s;
 
   @media ${theme.media.large} {
     display: none;
