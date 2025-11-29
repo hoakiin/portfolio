@@ -84,7 +84,7 @@ const bounce = keyframes`
 const Arrow = styled.a`
   display: block;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
   cursor: pointer;
   animation: ${bounce} 2s ease-in-out infinite;
   animation-delay: 0.4s;
