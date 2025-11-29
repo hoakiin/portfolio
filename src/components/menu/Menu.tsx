@@ -6,7 +6,7 @@ const items = [
   {
     title: "Home",
     href: "main",
-    offset: 50
+    offset: 0
   },
   {
     title: "About",

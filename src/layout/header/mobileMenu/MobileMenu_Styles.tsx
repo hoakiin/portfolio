@@ -3,7 +3,8 @@ import { theme } from "../../../styles/Theme";
 import { css } from "styled-components";
 import { Link } from "react-scroll";
 
-const MobileMenu = styled.nav``;
+const MobileMenu = styled.nav`
+`;
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
@@ -69,22 +70,30 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   z-index: 99999;
   background-color: ${theme.colors.headerBg};
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 0.8s ease-in-out;
+
+  ul {
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.8s ease-in-out;
+  }
 
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    `}
+      transform: translateY(0);
 
-  ul {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    flex-direction: column;
-  }
+      & ul {
+        gap: 40px;
+      }
+    `}
 `;
 
 const NavLink = styled(Link)`

@@ -59,6 +59,7 @@ const ImageWrapper = styled.div`
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
     opacity: 0;
+    transition: .2s ease-in-out;
   }
 
   ${Button} {
@@ -66,7 +67,7 @@ const ImageWrapper = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
   }
 
   &:hover {
@@ -74,6 +75,7 @@ const ImageWrapper = styled.div`
       opacity: 1;
     }
     ${Button} {
+      transform: translate(-50%, -50%);
       opacity: 1;
       &:hover {
         filter: brightness(0.9);
@@ -122,14 +124,10 @@ const Tags = styled.ul`
   li {
     white-space: nowrap;
 
-    border: 1px solid #c2e9fb;
+    border: 1px solid #a0c7d7;
     border-radius: 6px;
-
-    background: ${theme.colors.gradient};
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    color: #a8d9ee;
+   
     font-size: 11px;
     letter-spacing: 1.2px;
     padding: 7px 16px;
