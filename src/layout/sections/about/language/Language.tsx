@@ -15,7 +15,13 @@ export const Language: React.FC<LanguagePropsType> = ({ name, percent, level }: 
       </S.TopRow>
 
       <S.Bar>
-        <S.Fill percent={percent} />
+        <S.Fill
+          percent={percent}
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+        />
       </S.Bar>
     </S.Language>
   );

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
+import { motion } from "framer-motion";
 
 const About = styled.section`
-position: relative;
+  position: relative;
   min-height: 80vh;
   display: flex;
   align-items: end;
@@ -78,8 +79,7 @@ const Languages = styled.div`
   grid-area: languages;
 `;
 
-
-// Language 
+// Language
 
 const Language = styled.div`
   display: flex;
@@ -113,22 +113,25 @@ const Bar = styled.div`
   overflow: hidden;
 `;
 
-const Fill = styled.div<{ percent: number }>`
+const Fill = styled(motion.div)<{ percent: number }>`
   width: ${({ percent }) => percent}%;
   height: 100%;
   background: ${theme.colors.gradient};
   border-radius: 4px;
+  transform-origin: left;
+  backface-visibility: hidden;
+  will-change: transform;
 `;
 
 export const S = {
-    About,
-    Wrapper,
-    Image,
-    Information,
-    Text,
-    Languages,
-    Language,
-    TopRow,
-    Bar,
-    Fill
-}
+  About,
+  Wrapper,
+  Image,
+  Information,
+  Text,
+  Languages,
+  Language,
+  TopRow,
+  Bar,
+  Fill,
+};
