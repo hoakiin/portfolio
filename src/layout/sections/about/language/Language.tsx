@@ -1,3 +1,6 @@
+import React from "react";
+import { useInView } from "react-intersection-observer";
+import { useReducedMotion } from "framer-motion";
 import { S } from "../About_Styles";
 
 type LanguagePropsType = {
@@ -6,9 +9,20 @@ type LanguagePropsType = {
   level: string;
 };
 
-export const Language: React.FC<LanguagePropsType> = ({ name, percent, level }: LanguagePropsType) => {
+export const Language: React.FC<LanguagePropsType> = ({
+  name,
+  percent,
+  level,
+}: LanguagePropsType) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.25,
+  });
+
+  const shouldReduce = useReducedMotion();
+
   return (
-    <S.Language>
+    <S.Language ref={ref}>
       <S.TopRow>
         <h3>{name}</h3>
         <span>{level}</span>
@@ -17,9 +31,8 @@ export const Language: React.FC<LanguagePropsType> = ({ name, percent, level }: 
       <S.Bar>
         <S.Fill
           percent={percent}
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          initial={{ scaleX: shouldReduce ? 1 : 0 }}
+          animate={{ scaleX: shouldReduce ? 1 : inView ? 1 : 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
         />
       </S.Bar>

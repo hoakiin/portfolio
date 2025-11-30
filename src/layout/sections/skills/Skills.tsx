@@ -68,16 +68,24 @@ const skillData = [
 ];
 
 export const Skills: React.FC = () => {
+  const isMobile = window.innerWidth < 769;
+
   return (
     <S.Skills id="skills">
       <Container>
         <SectionTitle>Skills</SectionTitle>
         <S.SkillsWrapper>
-          <Fade cascade={true} damping={0.2} triggerOnce>
-            {skillData.map((s, index) => {
-              return <Skill iconId={s.iconId} key={index} title={s.title} />;
-            })}
-          </Fade>
+          {!isMobile ? (
+            <Fade cascade damping={0.2} triggerOnce fraction={0.15}>
+              {skillData.map((s, index) => (
+                <Skill iconId={s.iconId} key={index} title={s.title} />
+              ))}
+            </Fade>
+          ) : (
+            skillData.map((s, index) => (
+              <Skill iconId={s.iconId} key={index} title={s.title} />
+            ))
+          )}
         </S.SkillsWrapper>
       </Container>
     </S.Skills>
