@@ -23,10 +23,10 @@ const Projects = styled.section`
 
 const Project = styled.div`
   background-color: ${theme.colors.projectBg};
-  max-width: 522px;
+  /* max-width: 522px;
   width: 362px;
-  flex-grow: 1;
-  margin: 0 auto;
+  flex-grow: 1; 
+  margin: 0 auto;*/
   min-height: 600px;
   display: flex;
   flex-direction: column;

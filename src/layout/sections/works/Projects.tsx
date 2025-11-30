@@ -7,8 +7,7 @@ import { Tabs } from "./tabs/Tabs";
 import { S } from "./Projects_Styles";
 import { useState } from "react";
 import { TabsStatusType } from "./tabs/Tabs";
-
-// const tabsItems = ["All", "Landing Page", "React", "SPA"];
+import { AnimatePresence, motion } from "motion/react";
 
 const tabsItems: Array<{ status: TabsStatusType; title: string }> = [
   {
@@ -34,6 +33,7 @@ const tags2 = ["Javascript", "React Native", "Redux"];
 
 const projData = [
   {
+    id: 1,
     type: "react",
     title: "Timer",
     src: projectImg,
@@ -41,6 +41,7 @@ const projData = [
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
   {
+    id: 2,
     type: "spa",
     title: "Social Network",
     src: projectImg,
@@ -77,17 +78,28 @@ export const Projects: React.FC = () => {
           currentFilterStatus={currentFilterStatus}
         />
         <FlexWrapper justify="space-between" align="stretch" wrap="wrap">
-          {filteredProjects.map((p, index) => {
-            return (
-              <Project
-                key={index}
-                title={p.title}
-                src={p.src}
-                tags={p.tags}
-                text={p.text}
-              />
-            );
-          })}
+          <AnimatePresence>
+            {filteredProjects.map((p) => {
+              return (
+                <motion.div
+                  style={{ maxWidth: "522px", width: "362px", flexGrow: 1, margin: "0 auto"}}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  key={p.id}
+                  layout
+                >
+                  <Project
+                    key={p.id}
+                    title={p.title}
+                    src={p.src}
+                    tags={p.tags}
+                    text={p.text}
+                  />
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
         </FlexWrapper>
       </Container>
     </S.Projects>
