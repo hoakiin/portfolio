@@ -39,7 +39,7 @@ export const Particle = () => {
                 //   mode: "push",
                 // },
                 onHover: {
-                  enable: true,
+                  enable: false,
                   mode: "repulse",
                 },
 
@@ -75,7 +75,7 @@ export const Particle = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 1,
+                speed:  .2,
                 straight: false,
               },
               number: {
@@ -84,7 +84,7 @@ export const Particle = () => {
                   width: 1920,
                   height: 1080,
                 },
-                value: 100,
+                value: 110,
               },
               opacity: {
                 value: 0.1,

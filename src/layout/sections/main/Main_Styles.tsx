@@ -11,6 +11,7 @@ const Main = styled.section`
   padding-top: 80px;
 
   @media ${theme.media.large} {
+    padding-top: 0px;
     ${FlexWrapper} {
       flex-direction: column-reverse;
       align-items: center;
@@ -22,7 +23,7 @@ const Main = styled.section`
 `;
 
 const MainTitle = styled.h1`
-  ${font({ family: "Tinos", weight: 400, Fmax: 20, Fmin: 16 })};
+  ${font({ family: "Tinos", weight: 400, Fmax: 20, Fmin: 17 })};
   margin: 27px 0 8px 5px;
 
   p {

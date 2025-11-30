@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const About = styled.section`
   position: relative;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: end;
   margin-bottom: 78px;
 
   @media ${theme.media.large} {
-    margin: 100px 0 70px 0;
+    margin: 60px 0 50px 0;
     align-items: unset;
   }
 `;

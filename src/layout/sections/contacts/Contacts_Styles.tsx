@@ -10,7 +10,7 @@ const Contacts = styled.section`
   }
 `;
 
-const StyledForm = styled.form`
+const Form = styled.form`
   margin: 0 auto;
   max-width: 532px;
   width: 100%;
@@ -33,6 +33,7 @@ const Field = styled.input`
   border: 1px solid ${theme.colors.font};
   border-radius: 6px;
   padding: 16px 18px;
+  font-size: 16px;
 
   color: ${theme.colors.font};
   font-family: "Montserrat", sans-serif;
@@ -48,6 +49,6 @@ const Field = styled.input`
 
 export const S = {
   Contacts,
-  StyledForm,
+  Form,
   Field,
 };

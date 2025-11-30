@@ -3,8 +3,7 @@ import { theme } from "../../../styles/Theme";
 import { css } from "styled-components";
 import { Link } from "react-scroll";
 
-const MobileMenu = styled.nav`
-`;
+const MobileMenu = styled.nav``;
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
@@ -37,6 +36,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.font};
       position: absolute;
       transform: translateY(-10px);
+      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
       ${({ isOpen }) =>
         isOpen &&
@@ -52,6 +52,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.font};
       position: absolute;
       transform: translateY(10px);
+      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
       ${({ isOpen }) =>
         isOpen &&
