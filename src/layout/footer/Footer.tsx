@@ -7,21 +7,25 @@ const socialItemsData = [
   {
     iconId: "gmail",
     name: "gmail",
+    href: "mailto:hoakiin.dev@gmail.com",
   },
 
   {
     iconId: "linkedin",
     name: "linkedin",
+    href: "#",
   },
 
   {
     iconId: "github",
     name: "github",
+    href: "https://github.com/hoakiin",
   },
 
   {
     iconId: "telegram",
     name: "telegram",
+    href: "https://t.me/hoakiin",
   },
 ];
 
@@ -34,7 +38,7 @@ export const Footer: React.FC = () => {
             {socialItemsData.map((s, index) => {
               return (
                 <S.SocialItem key={index}>
-                  <S.SocialLink href="#">
+                  <S.SocialLink href={s.href} target="_blank">
                     <Icon
                       width="37px"
                       height="37px"
