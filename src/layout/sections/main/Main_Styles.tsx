@@ -64,6 +64,7 @@ const Photo = styled.img`
   max-width: 350px;
   min-width: 205px;
   width: 100%;
+  transform: scale(-1, 1);
 
   @media ${theme.media.large} {
     max-width: 300px;
