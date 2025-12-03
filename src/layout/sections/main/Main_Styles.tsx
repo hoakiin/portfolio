@@ -8,7 +8,7 @@ const Main = styled.section`
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 130px;
 
   @media ${theme.media.large} {
     padding-top: 0px;
@@ -23,7 +23,7 @@ const Main = styled.section`
 `;
 
 const MainTitle = styled.h1`
-  ${font({ family: "Tinos", weight: 400, Fmax: 20, Fmin: 17 })};
+  ${font({weight: 400, Fmax: 20, Fmin: 17 })};
   margin: 27px 0 8px 5px;
 
   p {
@@ -36,7 +36,7 @@ const MainTitle = styled.h1`
 `;
 
 const Name = styled.span`
-  ${font({ weight: 700, Fmax: 52, Fmin: 40 })};
+  ${font({ weight: 700, Fmax: 60, Fmin: 45 })};
   background: ${theme.colors.gradient};
   background-clip: text;
   -webkit-background-clip: text;
@@ -45,8 +45,8 @@ const Name = styled.span`
 
 const Text = styled.p`
   letter-spacing: 0.1px;
-  line-height: 23px;
-  max-width: 470px;
+  line-height: 24px;
+  max-width: 490px;
   margin: 10px 0 37px 0;
 
   @media ${theme.media.large} {

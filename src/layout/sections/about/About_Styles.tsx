@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 
 const About = styled.section`
   position: relative;
-  min-height: 60vh;
-  display: flex;
-  align-items: end;
   margin-bottom: 78px;
+  padding-top: 100px;
 
   @media ${theme.media.large} {
-    margin: 60px 0 50px 0;
+     padding-top: 50px;
+    margin: 0 0 50px 0;
     align-items: unset;
   }
 `;
