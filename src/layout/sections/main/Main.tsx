@@ -36,7 +36,7 @@ export const Main: React.FC = () => {
 
           <S.Photo src={photo} alt="photo" />
         </FlexWrapper>
-        <S.Arrow as={Link} to={"about"} smooth={true} offset={50}>
+        <S.Arrow as={Link} to={"about"} smooth={true} offset={-10}>
           <img src={arrow} alt="" />
         </S.Arrow>
       </Container>

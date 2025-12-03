@@ -11,7 +11,7 @@ const items = [
   {
     title: "About",
     href: "about",
-    offset: 50
+    offset: -10 
   },
   {
     title: "Projects",
