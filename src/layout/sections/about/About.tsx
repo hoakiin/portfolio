@@ -1,6 +1,6 @@
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
-import image from "../../../assets/images/about.png";
+import image from "../../../assets/images/about-photo.svg";
 import { Language } from "./language/Language";
 import { S } from "./About_Styles";
 
@@ -18,8 +18,7 @@ export const About: React.FC = () => {
               tumulus, estimated to have been 15 metres (50 feet) in length,
               with a chamber built from sarsen megaliths on its eastern end.
               Both inhumed and cremated human remains were placed within this
-              chamber during the Neolithic period, representing at least nine or
-              ten individuals.
+              chamber during the Neolithic period.
             </S.Text>
           </S.Information>
 

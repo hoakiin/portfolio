@@ -8,7 +8,7 @@ const About = styled.section`
   padding-top: 100px;
 
   @media ${theme.media.large} {
-     padding-top: 50px;
+    padding-top: 50px;
     margin: 0 0 50px 0;
     align-items: unset;
   }
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   grid-template-areas:
     "image information"
     "image languages";
-  grid-column-gap: 40px;
+  grid-column-gap: 70px;
   grid-row-gap: 30px;
 
   @media ${theme.media.large} {
@@ -31,7 +31,8 @@ const Wrapper = styled.div`
     grid-template-areas:
       "image information"
       "languages languages";
-    grid-gap: 40px;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
   }
 
   @media ${theme.media.tablet} {
@@ -41,7 +42,6 @@ const Wrapper = styled.div`
     grid-template-areas:
       "information"
       "languages";
-    grid-column-gap: 0;
     grid-row-gap: 40px;
   }
 `;
@@ -50,6 +50,12 @@ const Image = styled.img`
   width: 330px;
   height: 450px;
   grid-area: image;
+
+  @media ${theme.media.large} {
+    margin-left: 20px;
+    width: 250px;
+    height: 300px;
+  }
 
   @media ${theme.media.tablet} {
     display: none;
@@ -76,6 +82,14 @@ const Languages = styled.div`
   flex-direction: column;
   gap: 15px;
   grid-area: languages;
+
+  @media ${theme.media.large} {
+    margin-bottom: 30px;
+  }
+
+  @media ${theme.media.large} {
+    margin-bottom: 0px;
+  }
 `;
 
 // Language
@@ -106,7 +120,7 @@ const TopRow = styled.div`
 
 const Bar = styled.div`
   width: 100%;
-  height: 20px;
+  height: 17px;
   background: #262435;
   border-radius: 5px;
   overflow: hidden;
