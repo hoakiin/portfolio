@@ -24,14 +24,14 @@ const Main = styled.section`
 
 const MainTitle = styled.h1`
   ${font({weight: 400, Fmax: 20, Fmin: 17 })};
-  margin: 27px 0 8px 5px;
+  margin: 0 0 8px 5px;
 
   p {
     display: none;
   }
 
   @media ${theme.media.large} {
-    margin: 15px 0 8px 5px;
+    margin: 25px 0 8px 5px;
   }
 `;
 
@@ -64,7 +64,6 @@ const Photo = styled.img`
   max-width: 350px;
   min-width: 205px;
   width: 100%;
-  transform: scale(-1, 1);
 
   @media ${theme.media.large} {
     max-width: 300px;
