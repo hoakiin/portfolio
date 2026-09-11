@@ -6,16 +6,16 @@ import { S } from "./Background_Styles";
 
 const educationData = [
   {
-    years: "1998 - 2004",
-    name: "Bachelors in Engineering",
-    text: "Piacentem substantiales um se sed esse haec Possit facis qui patriam.",
+    years: "2025 - 2026",
+    name: "IT-INCUBATOR",
+    text: "Intensive training in modern frontend development, covering JavaScript, TypeScript, React, Next.js, Redux Toolkit, RTK Query, REST APIs and Git.",
   },
 ];
 const experienceData = [
   {
-    years: "1998 - 2004",
-    name: "Bachelors in Engineering",
-    text: "Piacentem substantiales um se sed esse haec Possit facis qui patriam.",
+    years: "2026 - Present",
+    name: "IT-INCUBATOR | Intern",
+    text: "Developing a social media platform for creating and sharing photo stories. Working with Next.js, TypeScript, SCSS, Radix UI and TanStack Query to build responsive, reusable interfaces and integrate REST APIs.",
   },
 ];
 
@@ -24,7 +24,7 @@ export const Background: React.FC = () => {
     <S.Background id="background">
       <Container>
         <FlexWrapper>
-          <div>
+          <S.Column>
             <SectionTitle>Education</SectionTitle>
             <S.ItemsWrapper>
               {educationData.map((e, index) => {
@@ -38,8 +38,8 @@ export const Background: React.FC = () => {
                 );
               })}
             </S.ItemsWrapper>
-          </div>
-          <div>
+          </S.Column>
+          <S.Column>
             <SectionTitle>Experience</SectionTitle>
             <S.ItemsWrapper>
               {experienceData.map((e, index) => {
@@ -53,7 +53,7 @@ export const Background: React.FC = () => {
                 );
               })}
             </S.ItemsWrapper>
-          </div>
+          </S.Column>
         </FlexWrapper>
       </Container>
     </S.Background>

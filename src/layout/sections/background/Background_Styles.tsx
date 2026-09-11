@@ -7,26 +7,21 @@ const Background = styled.section`
 
   ${FlexWrapper} {
     gap: 50px;
+    flex-wrap: wrap;
+  }
+`;
 
-    @media ${theme.media.tablet} {
-      flex-wrap: wrap;
-    }
+const Column = styled.div`
+  width: calc(50% - 25px);
+
+  @media ${theme.media.large} {
+    width: 100%;
   }
 `;
 
 const ItemsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-const Item = styled.div`
-  @media ${theme.media.large} {
-    max-width: 330px;
-    max-width: 100%;
-  }
-  @media ${theme.media.tablet} {
-    max-width: 100%;
-  }
 `;
 
 const Years = styled.p`
@@ -43,12 +38,13 @@ const Name = styled.p`
 
 const Text = styled.p`
   font-size: 15px;
+  line-height: 1.6;
 `;
 
 export const S = {
   Background,
+  Column,
   ItemsWrapper,
-  Item,
   Years,
   Name,
   Text,
