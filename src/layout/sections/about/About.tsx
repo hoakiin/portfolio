@@ -13,12 +13,12 @@ export const About: React.FC = () => {
           <S.Information>
             <SectionTitle>About me</SectionTitle>
             <S.Text>
-              The long barrow was built on land previously inhabited in the
-              Mesolithic period. It consisted of a sub-rectangular earthen
-              tumulus, estimated to have been 15 metres (50 feet) in length,
-              with a chamber built from sarsen megaliths on its eastern end.
-              Both inhumed and cremated human remains were placed within this
-              chamber during the Neolithic period.
+              I’m a frontend developer who enjoys creating clean, user-friendly
+              interfaces and bringing ideas to life through code. I work mainly
+              with React, TypeScript and Next.js, with a focus on responsive web
+              applications and thoughtful user experiences. I’m always exploring
+              new technologies, taking on new challenges and finding ways to
+              improve with every project.
             </S.Text>
           </S.Information>
 
