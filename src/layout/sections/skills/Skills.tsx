@@ -64,7 +64,7 @@ export const Skills: React.FC = () => {
         <SectionTitle>Skills</SectionTitle>
         <S.SkillsWrapper>
           {!isMobile ? (
-            <Fade cascade damping={0.15} triggerOnce>
+            <Fade cascade damping={0.1} triggerOnce>
               {skillData.map((s, index) => (
                 <Skill iconId={s.iconId} key={index} title={s.title} />
               ))}
