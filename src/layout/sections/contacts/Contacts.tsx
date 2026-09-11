@@ -3,29 +3,30 @@ import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
 import { S } from "./Contacts_Styles";
 import emailjs from '@emailjs/browser';
-import { ElementRef, useRef } from "react";
+import { ElementRef, FormEvent, useRef, useState } from "react";
 
 export const Contacts: React.FC = () => {
   const form = useRef<ElementRef<'form'>>(null);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if(!form.current) return
 
     emailjs
-      .sendForm('service_8iayvhx', 'template_dtl2lzi', form.current, {
+      .sendForm('service_fhza7ga', 'template_dtl2lzi', form.current, {
         publicKey: 'eZ1Vv8E9n_vMJy715',
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          setStatus("success");
+          e.currentTarget.reset();
         },
-        (error) => {
-          console.log('FAILED...', error.text);
+        () => {
+          setStatus("error");
         },
       );
-      e.target.reset()
   };
 
   return (
@@ -38,6 +39,16 @@ export const Contacts: React.FC = () => {
           <S.Field placeholder="Subject" type="text" required name={"subject"} />
           <S.Field as="textarea" placeholder="Message" required name={"message"} />
           <Button type="submit">Submit</Button>
+          <S.StatusWrapper>
+            {status === "success" && (
+              <S.StatusMessage role="status">Message sent</S.StatusMessage>
+            )}
+            {status === "error" && (
+              <S.StatusMessage error role="alert">
+                Failed to send. Please try again.
+              </S.StatusMessage>
+            )}
+          </S.StatusWrapper>
         </S.Form>
       </Container>
     </S.Contacts>
