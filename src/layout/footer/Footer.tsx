@@ -13,7 +13,7 @@ const socialItemsData = [
   {
     iconId: "linkedin",
     name: "linkedin",
-    href: "#",
+    href: "https://www.linkedin.com/in/ekaterina-olesik",
   },
 
   {
