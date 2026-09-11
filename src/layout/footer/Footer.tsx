@@ -51,7 +51,7 @@ export const Footer: React.FC = () => {
               );
             })}
           </S.SocialList>
-          <S.Copyright>WEB DEVELOPER 2025</S.Copyright>
+          <S.Copyright>WEB DEVELOPER 2026</S.Copyright>
         </FlexWrapper>
       </Container>
     </S.Footer>
