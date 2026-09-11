@@ -4,7 +4,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
 import { S } from "./Main_Styles";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
 
 export const Main: React.FC = () => {
@@ -12,12 +12,12 @@ export const Main: React.FC = () => {
     <S.Main id="main">
       <Container>
         <FlexWrapper justify="space-around">
-          <div>      
+          <div>
             <S.MainTitle>
               <p>Frontend Developer.</p>
               <Typewriter
                 options={{
-                  strings: ["Front-End Developer", "Making Web Magic Happen", "React Developer", "Crafting Web With Soul"],
+                  strings: ["Frontend Developer", "Turning Ideas Into Code"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -25,17 +25,27 @@ export const Main: React.FC = () => {
             </S.MainTitle>
             <S.Name>Kate Olesik</S.Name>
             <S.Text>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt.
+              Building clean, responsive and intuitive web applications using
+              React, TypeScript and Next.js.
             </S.Text>
             <Button as={Link} to={"contacts"} smooth={true} offset={-90}>
               Contact Me
+            </Button>
+            <Button
+              as="a"
+              href={`${import.meta.env.BASE_URL}cv/CV_Ekaterina_Olesik_Frontend_Developer.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              outlined
+              style={{ marginLeft: "25px" }}
+            >
+              Open CV
             </Button>
           </div>
 
           <S.Photo src={photo} alt="photo" />
         </FlexWrapper>
+
         <S.Arrow as={Link} to={"about"} smooth={true} offset={-10}>
           <img src={arrow} alt="" />
         </S.Arrow>
