@@ -23,11 +23,6 @@ const Projects = styled.section`
 
 const Project = styled.div`
   background-color: ${theme.colors.projectBg};
-  /* max-width: 522px;
-  width: 362px;
-  flex-grow: 1; 
-  margin: 0 auto;*/
-  min-height: 600px;
   display: flex;
   flex-direction: column;
 `;
@@ -36,7 +31,7 @@ const Description = styled.div`
   padding: 24px 26px 35px 26px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex-grow: 1;
 
   a ~ a {
     margin-left: 12px;
@@ -107,7 +102,6 @@ const Text = styled.p`
   line-height: 24px;
   letter-spacing: 0.8px;
   margin-bottom: 30px;
-  flex-grow: 1;
 `;
 
 const ButtonRow = styled.div``;

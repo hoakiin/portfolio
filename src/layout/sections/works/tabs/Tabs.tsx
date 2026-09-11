@@ -1,10 +1,10 @@
 import { S } from "../Projects_Styles";
 
-export type TabsStatusType = "all" | "landing" | "react" | "spa"
+export type TabsStatusType = "all" | "nextjs" | "react"
 
 type TabsPropsType = {
   tabsItems: Array<{status: TabsStatusType, title: string}>,
-  changeFilterStatus: (value: TabsStatusType | "spa") => void,
+  changeFilterStatus: (value: TabsStatusType) => void,
   currentFilterStatus: string
 }
 
