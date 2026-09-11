@@ -14,6 +14,10 @@ const skillData = [
     title: "CSS",
   },
   {
+    iconId: "sass",
+    title: "SCSS",
+  },
+  {
     iconId: "js",
     title: "javascript",
   },
@@ -22,49 +26,33 @@ const skillData = [
     title: "typescript",
   },
   {
-    iconId: "mongo",
-    title: "mongo db",
-  },
-  {
-    iconId: "pgsql",
-    title: "PostgreSQL",
-  },
-  {
-    iconId: "jest",
-    title: "jest",
-  },
-  {
-    iconId: "express",
-    title: "express js",
-  },
-  {
-    iconId: "nestjs",
-    title: "nest js",
-  },
-  {
-    iconId: "docker",
-    title: "docker",
-  },
-  {
     iconId: "reactjs",
-    title: "react js",
+    title: "react",
   },
   {
-    iconId: "reactn",
-    title: "react native",
-  },
-  {
-    iconId: "styled",
-    title: "Styled Components",
+    iconId: "next",
+    title: "Next.js",
   },
   {
     iconId: "redux",
-    title: "redux",
+    title: "redux Toolkit",
+  },
+  {
+    iconId: "tanstack",
+    title: "TanStack Query",
   },
   {
     iconId: "git",
     title: "git",
   },
+  {
+    iconId: "react-hook-form",
+    title: "React Hook Form",
+  },
+  {
+    iconId: "zod",
+    title: "Zod",
+  }
 ];
 
 export const Skills: React.FC = () => {

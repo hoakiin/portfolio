@@ -12,9 +12,13 @@ const Skills = styled.section`
 
 const SkillsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   gap: 50px 15px;
+
+  @media ${theme.media.large} {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   @media ${theme.media.mobile} {
     grid-template-columns: repeat(2, 1fr);
