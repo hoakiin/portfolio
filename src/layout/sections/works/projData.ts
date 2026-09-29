@@ -3,6 +3,7 @@ import todolistImg from "../../../assets/images/projects/todolist.jpg";
 import musicfunImg from "../../../assets/images/projects/musicfun.png";
 import horizonImg from "../../../assets/images/projects/horizon.png";
 import counterImg from "../../../assets/images/projects/counter.jpg";
+import liveDocsImg from "../../../assets/images/projects/livedocs.png";
 
 export type ProjectType = {
   id: number;
@@ -12,7 +13,7 @@ export type ProjectType = {
   tags: Array<string>;
   text: string;
   link: string;
-  demoLink: string;
+  demoLink?: string;
   codeLink: string;
 };
 
@@ -30,6 +31,17 @@ export const projData: Array<ProjectType> = [
   },
   {
     id: 2,
+    categories: ["nextjs"],
+    title: "Live Docs",
+    src: liveDocsImg,
+    tags: ["Next.js", "TypeScript", "Liveblocks", "Lexical", "Clerk"],
+    text: "Real-time collaborative document editor with live editing, authentication and document management features.",
+    link: "https://live-docs-hoakiin.vercel.app/",
+    demoLink: "https://live-docs-hoakiin.vercel.app/",
+    codeLink: "https://github.com/hoakiin/live-docs",
+  },
+  {
+    id: 3,
     categories: ["react"],
     title: "TodoList",
     src: todolistImg,
@@ -40,19 +52,18 @@ export const projData: Array<ProjectType> = [
     codeLink: "https://github.com/hoakiin/todolist",
   },
   {
-    id: 3,
+    id: 4,
     categories: ["react"],
     title: "MusicFun",
     src: musicfunImg,
     tags: ["React", "TypeScript", "Redux Toolkit", "RTK Query"],
     text: "Music streaming interface with playlists and album browsing.",
-    link: "https://musicfun-hoakiin.vercel.app/",
-    demoLink: "https://musicfun-hoakiin.vercel.app/",
+    link: "https://github.com/hoakiin/musicfun",
     codeLink: "https://github.com/hoakiin/musicfun",
   },
   {
-    id: 4,
-    categories: ["react", "nextjs"],
+    id: 5,
+    categories: ["nextjs"],
     title: "Horizon",
     src: horizonImg,
     tags: ["Next.js", "TypeScript", "Appwrite", "Plaid"],
@@ -62,7 +73,7 @@ export const projData: Array<ProjectType> = [
     codeLink: "https://github.com/hoakiin/horizon",
   },
   {
-    id: 5,
+    id: 6,
     categories: ["react"],
     title: "Counter",
     src: counterImg,
