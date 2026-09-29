@@ -24,8 +24,8 @@ export const About: React.FC = () => {
 
           <S.Languages>
             <Language name="Russian" percent={100} level="Native" />
-            <Language name="English" percent={60} level="B1" />
-            <Language name="German" percent={40} level="A2" />
+            <Language name="English" percent={65} level="B1+" />
+            <Language name="German" percent={50} level="B1" />
           </S.Languages>
         </S.Wrapper>
       </Container>
