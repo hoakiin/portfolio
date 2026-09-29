@@ -124,7 +124,7 @@ const Tags = styled.ul`
    
     font-size: 11px;
     letter-spacing: 1.2px;
-    padding: 7px 16px;
+    padding: 7px 10px;
   }
 `;
 
